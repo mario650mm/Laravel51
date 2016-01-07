@@ -4,6 +4,7 @@
     <div class="container-fluid">
         <div class="row">
             <div class="col-md-8 col-md-offset-2">
+                <div class="panel-heading">Login</div>
                 @if (count($errors) > 0)
                     <div class="alert alert-danger">
                         <strong> Whoops!</strong> {{ trans('validation.attributes.problems_with_access') }} <br><br>
@@ -15,7 +16,7 @@
                     </div>
                 @endif
 
-                <form class="form-horizontal" role="form" method="POST" action="/auth/login">
+                <form class="form-horizontal" role="form" method="POST" action="{{route('login')}}">
                     <fieldset>
                         <input type="hidden" name="_token" value="{{ csrf_token() }}">
                        {{-- <div class="text-center">
@@ -56,7 +57,7 @@
                         </div>
                     </fieldset>
                 </form>
-            </div>
+               </div>
         </div>
     </div>
 @endsection
