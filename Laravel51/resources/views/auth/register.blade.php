@@ -48,13 +48,13 @@
                                     <input type="password" class="form-control" name="password_confirmation">
                                 </div>
                             </div>
-
-                            <div class="form-group">
-                                <label class="col-md-4 control-label">User type</label>
-                                <div class="col-md-6">
-                                    <input type="select" class="form-control" name="role">
+                            <!-- Example con laravel collective-->
+                             {{--<div class="form-group">
+                                 <label class="col-md-4 control-label">@lang('users.type_user')</label>
+                                <div class="col-md-6"> 
+                                    {!! Form::select('role',$type,null,['class' => 'form-control']) !!}
                                 </div>
-                            </div>
+                            </div>--}}
 
                             <div class="form-group">
                                 <div class="col-md-6 col-md-offset-4">
