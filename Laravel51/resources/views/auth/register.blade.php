@@ -18,7 +18,7 @@
                             </div>
                         @endif
 
-                        <form class="form-horizontal" role="form" method="POST" action="/auth/register">
+                        <form class="form-horizontal" role="form" method="POST" action="{{route('register')}}">
                             <input type="hidden" name="_token" value="{{ csrf_token() }}">
 
                             <div class="form-group">
@@ -46,6 +46,13 @@
                                 <label class="col-md-4 control-label">Confirm Password</label>
                                 <div class="col-md-6">
                                     <input type="password" class="form-control" name="password_confirmation">
+                                </div>
+                            </div>
+
+                            <div class="form-group">
+                                <label class="col-md-4 control-label">User type</label>
+                                <div class="col-md-6">
+                                    <input type="select" class="form-control" name="role">
                                 </div>
                             </div>
 

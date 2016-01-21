@@ -109,7 +109,8 @@ return [
         'password' => 'Password',
         'remember_me' => 'remember me',
         'login' => 'Login',
-        'forgot_your_password' => 'Forgot your password'
+        'forgot_your_password' => 'Forgot your password',
+        'problems_with_access' => 'Problems with access',
     ],
 
 ];
