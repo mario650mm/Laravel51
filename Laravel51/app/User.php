@@ -36,4 +36,11 @@ class User extends Model implements AuthenticatableContract,
      * @var array
      */
     protected $hidden = ['password', 'remember_token'];
+
+    public static function typeUser(){
+        return [
+            'user' => trans('users.user'),
+            'editor' => trans('users.editor'),
+        ];
+    }
 }

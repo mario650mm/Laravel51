@@ -60,6 +60,7 @@ class AuthController extends Controller
         $user = new User(\Request::all());
         $user->password = bcrypt(Input::get('password'));
         $user->role = 'user';
+        //$user->role = Input::get('role');
         $user->save();
         return $user;
 
